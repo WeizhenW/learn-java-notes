@@ -1,0 +1,20 @@
+FROM CODECADEMY - LEARN JAVA COURSE
+
+- JVM: Java Virtual Machine
+=> ensures the same Java code can be run on different operating systems and platforms. 
+
+- Each file has one primary class named after the file. 
+
+-Java is a compiled programming language, 
+meaning the code we write in a .java file is transformed into byte code by a compiler before it is executed by the Java Virtual Machine on your computer.
+
+public class ClassName {
+  public static void main(String[] args) {
+    
+    System.out.println("Java is a class-based language.");
+    
+  }
+}
+
+To compile: javac FileName.java => generate a FileName.class file
+To execute: java FileName

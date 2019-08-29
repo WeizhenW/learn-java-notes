@@ -40,4 +40,7 @@ VARIABLES!
   Static typing helps because bugs are caught during programming rather than during execution of the code.
   Java’s static typing helps programmers avoid runtime errors, and thus have much safer code that is free from bugs.
 
+-------------------
+Division
+- Division has different results with integers. The / operator does integer division, which means that any remainder is lost.
 

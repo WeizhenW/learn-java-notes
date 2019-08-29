@@ -1,0 +1,39 @@
+OOP
+
+-Classes
+    - Classes are a blueprint for objects. Blueprints detail the general structure. 
+    - An instance is the thing itself.
+
+A class is the set of instructions that describe how an instance can behave and what information it contains.
+We create objects (instances of a class) using a constructor method. The constructor is defined within the class.
+
+Instance variables, or instance fields are the state in our objects.
+
+Classes define the state and behavior of their instances. 
+- Behavior comes from methods defined in the class. 
+- State comes from instance fields declared inside the class.
+
+public class Dog {
+  // instance field
+  String breed;
+  boolean hasOwner;
+  // constructor method
+  public Dog(String dogBreed, boolean dogOwned) {
+   
+    breed = dogBreed;
+    hasOwner = dogOwned;
+  }
+  public static void main(String[] args) {
+    /* 
+    create instance: 
+    use 'new' operator and invoke constructor
+    */
+    Dog fido = new Dog("poodle", true);
+    /* 
+    fields are accessed using: 
+    the instance name, `.` operator, and the field name.
+    */
+    fido.breed;
+    // "poodle"
+  }
+}

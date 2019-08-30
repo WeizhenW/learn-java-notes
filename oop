@@ -7,7 +7,8 @@ OOP
 A class is the set of instructions that describe how an instance can behave and what information it contains.
 We create objects (instances of a class) using a constructor method. The constructor is defined within the class.
 
-Instance variables, or instance fields are the state in our objects.
+----------------
+- Instance variables, or instance fields are the state in our objects.
 
 Classes define the state and behavior of their instances. 
 - Behavior comes from methods defined in the class. 
@@ -37,3 +38,39 @@ public class Dog {
     // "poodle"
   }
 }
+------------------
+- method
+class Car {
+  String color;
+  int milesDriven;
+  //constructor method
+  public Car(String carColor) {
+    color = carColor;
+    milesDriven = 0;         
+  }
+  //drive method
+  public void drive() {
+     String message = "Miles driven: " + milesDriven;
+     System.out.println(message);
+  }
+
+  public static void main(String[] args){
+    //create new instance by invoking the constructor method
+     Car myFastCar = new Car("red");
+     //call the drive method on myFastCar instance
+     myFastCar.drive();
+  }
+}
+
+A method is a task that an object of a class performs.
+
+------
+method with return
+
+public int numberOfTires() {
+   int tires = 4;
+   return tires;
+}
+- int signifies the data type of the value returned
+- needs to have return keyword in the method scope
+- The void keyword (which means “completely empty”) indicates to the method that no value is returned after calling that method.

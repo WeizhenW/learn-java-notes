@@ -32,3 +32,8 @@ switch (course) {
   default:
     System.out.println("Course not found");
 }
+
+------
+and: &&
+or: ||
+not: !

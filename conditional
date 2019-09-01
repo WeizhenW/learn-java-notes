@@ -1,0 +1,34 @@
+if - else if - else
+---------
+if (course.equals(conditional 1)) {
+
+  // statement
+
+} else if (conditional 2)) {
+
+  // statement
+
+} else {
+
+  //statement
+
+}
+
+switch
+--------------
+switch (course) {
+  case "Algebra": 
+    // Enroll in Algebra
+    break; 
+  case "Biology": 
+    // Enroll in Biology
+    break;
+  case "History": 
+    // Enroll in History
+    break;
+  case "Theatre":
+    // Enroll in Theatre
+    break;
+  default:
+    System.out.println("Course not found");
+}

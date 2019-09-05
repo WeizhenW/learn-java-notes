@@ -1,0 +1,37 @@
+ArrayList
+----
+To represent dynamic lists, we can use Java’s ArrayLists. ArrayLists allow us to:
+
+- Store elements of the same type (just like arrays)
+- Access elements by index (just like arrays)
+- Add elements
+- Remove elements
+
+to import:
+import java.util.ArrayList;
+
+create ArrayList:
+ArrayList<String> names;
+
+We use angle brackets < and > to declare the type of the ArrayList. These symbols are used for generics. Generics are a Java construct that allows us to define classes and objects as parameters of an ArrayList.
+ArrayList<Integer> ages;
+<Double> and <Char>
+
+// Declaring and initializing in one line:
+ArrayList<String> babyNames = new ArrayList<String>();
+babyNames.add("bear");
+babyNames.size();
+
+--
+For ArrayLists, bracket notation won’t work. 
+Instead, we use the method get() to access an index:
+System.out.println(babyNames.get(2));
+
+--
+shoppingCart.set(0, "Tweed Cape");
+shoppingCart.remove(1);
+shoppingCart.remove("Trench Coat");
+This command removes the FIRST instance of the value "Trench Coat".
+--
+get index
+System.out.println(detectives.indexOf("Fletcher"));

@@ -1,0 +1,38 @@
+In Java, array holds the same datatype - integer, double, boolean, String, or any other objects
+
+--
+Declare array explicitly:
+
+double[] prices = {13.15, 15.87, 14.22, 16.66};
+String[] clothingItems = {"Tank Top", "Beanie", "Funny Socks", "Corduroys"};
+
+--
+array to string method - import Arrays package
+
+import java.util.Arrays;
+
+public class Lottery(){
+
+  public static void main(String[] args){
+    int[] lotteryNumbers = {4, 8, 15, 16, 23, 42};
+    String betterPrintout = Arrays.toString(lotteryNumbers);
+    System.out.println(betterPrintout);
+  }
+
+}
+
+--
+initialize empty array - must define a fixed size - the size can not be changed
+
+We can also create empty arrays and then fill the items one by one. 
+Empty arrays have to be initialized with a fixed size:
+
+String[] menuItems = new String[5];
+
+We can change an item after it has been assigned! 
+
+--
+String[] arg
+The args parameter is another example of a String array. 
+In this case, the array args contains the arguments that we pass in from the terminal when we run the class file.
+(So far, args has been empty.)

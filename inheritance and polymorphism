@@ -1,0 +1,51 @@
+INHERITANCE
+---
+//below is the parent class
+class Noodle {
+  //declare instance fields
+  double lengthInCentimeters;
+  double widthInCentimeters;
+  String shape;
+  String ingredients;
+  String texture = "brittle";
+  //constructor method in parent class
+  //this constructor method taking in four paremeters
+  Noodle(double lenInCent, double wthInCent, String shp, String ingr) {
+    
+    this.lengthInCentimeters = lenInCent;
+    this.widthInCentimeters = wthInCent;
+    this.shape = shp;
+    this.ingredients = ingr;
+    
+  }
+  //cook method
+  //add final key word to parent class method - child class will have access to it but can't modify it
+  final public void cook() {
+    
+    this.texture = "cooked";
+    
+  }
+  //main method
+  public static void main(String[] args) {
+      //inside main method
+      //create an object of Pho - since the arguments have been past via super(), no need to provide arguments below
+    Pho phoChay = new Pho();
+    System.out.println(phoChay.shape);
+    
+  }
+  
+}
+
+//below is the child class
+//delcare child class using "extends"
+class Pho extends Noodle {
+  //constructor method of the child class
+  public Pho() {
+    //passing arguments to the constructor method of the parent class
+    //in the same order as what has been defined in the parent class constructor method
+    //those value will be the default for this child class when you create object out of it
+    super(30.0, 0.64, "flat", "rice flour");
+  }
+  
+  
+}
